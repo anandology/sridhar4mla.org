@@ -36,8 +36,12 @@
     header h1 {
         font-style: normal;
         font-weight: bold;
-        font-size: 2.0em;
         margin: 0px;
+    }
+    
+    header h1 a {
+        text-decoration: none;
+        color: white;
     }
 
     .banner {
@@ -160,9 +164,8 @@
     .candidate {
         padding: 0px;
         padding-right: 30px;
-    }
-    .candidate h1 {
-        font-size: 2.0em;
+        text-transform: uppercase;
+        font-family: Georgia;
     }
     .candidate h2 {
         font-size: 1.5em;
@@ -182,32 +185,20 @@
     <header class="header">
         <div class="container">
             <div class="row">
-                <div class="span6 party">
-                    <br/>
-                    <a href="/"><img src="assets/images/loksatta-logo.png"/></a>
-                    <!--
-                    <h1>Lok Satta Party</h1>
-                    <h3>New Politics for A New Generation</h3>
-                -->
+                <div class="span7">
+                    <h4>Vote for</h4>
+                    <h1 class="candidate">Sridhar Pabbisetty<h1>
+                    <h4>
+                        Hebbal Assembly Constituency
+                    </h4>
                 </div>
-                <div class="span3">
-                    <div class="candidate">
-                        <div>Vote for</div>
-                        <h1>SRIDHAR</h1>
-                        <h2>PABBISETTY</h2>
+                <div class="span5">
+                    <h4>&nbsp;</h4>
+                    <img src="assets/images/whistle.png" style="float:right;height:100%;padding-left:20px;"/>
+                    <div style="float:right">
+                        <h2>Lok Satta Party</h2>
+                        <h5>New politics for new generation<h5>
                     </div>
-                </div>
-                <!--
-                <div class="span2 for-container">
-                    <div class="for-div"><span class="for">for</span> Hebbal</div>
-                    <div class="for-div"><span class="for">for</span> Bangalore</div>
-                    <div class="for-div"><span class="for">for</span> India</div>
-                </div>
-                -->
-                <div class="span3">
-                    <div>for</div>
-                    <h2>HEBBAL</h2>
-                    <div style="font-size: 1.1em;">Assembly Constituency</div>
                 </div>
             </div>
         </div>
