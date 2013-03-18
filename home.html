@@ -39,6 +39,46 @@
         font-size: 2.0em;
         margin: 0px;
     }
+
+    .banner {
+        background: url("assets/images/sridhar.png") no-repeat right;
+        color: #FFFFFF;
+        background-color:#000;
+        height: 256px;
+        position: relative;
+        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .banner-overlay {
+        float: left;
+        padding: 40px 40px 0;
+    }
+
+    .banner-quote {
+        font-family: "Scada",sans-serif;
+        font-size: 25px;
+        line-height: 35px;
+/*        text-transform: uppercase;
+*/    }
+
+    .menu {
+        margin: 20px 0px 0px 0px;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    .menu-item{
+        background-color:#EEEEEE;
+        color: #2B56A0;
+        padding: 10px 26px 10px 26px;
+        border-top: 1px solid #2B56A0;
+        border-bottom: 1px solid #2B56A0;
+        text-align: center;
+    }
+
+    .menu-item a{
+        color: #2B56A0;
+    }
+
     .party h3 {
         border: none;
         font-style: italic;
@@ -73,22 +113,6 @@
         padding-left: 20px;
     }
 
-    .banner0 {
-        padding: 20px 50px 20px 0px; 
-        border-right: 5px solid #ccc; 
-    }
-
-    .banner {
-        padding: 40px 0px 20px 30px; 
-        text-align: left;
-        font-family: Tahoma;
-    }
-
-    .banner div {
-        padding: 10px 0px;
-    }
-
-
     .date {
         color: #7e2724;
         font-size: 22px;
@@ -109,15 +133,16 @@
         font-size: 1.2em;
         background: white;
         color: #444;
-        /*
-        border: 2px solid #ddd;
-        border-radius: 5px;
-        background: #fff;
-        */
     }
 
     .quote {
         line-height: 1.5em;
+        border-bottom: 1px solid #ddd;
+        background : url("assets/images/sridhar.png") no-repeat right; 
+        background-color: black;
+        background-size: 10em;
+        color: white;
+        margin-bottom: 20px;
     }
 
     .for-container {
@@ -187,18 +212,39 @@
             </div>
         </div>
     </header>
-
     <div class="container">
+        <div class="menu">
+            <span class="menu-item">
+                <a href='/home'>Home</a>
+            </span>
+            <span class="menu-item">
+                <a href="/why-sridhar">Why Sridhar?</a>
+            </span>
+            <span class="menu-item">
+                <a href="/why-loksatta">Why Loksatta?</a>
+            </span>
+            <span class="menu-item">
+                <a href="/issues">Issues</a>
+            </span>
+            <span class="menu-item">
+                <a href="/volunteer">Volunteer</a>
+            </span>
+            <span class="menu-item">
+                <a href="/contact">Contact</a>
+            </span>
+        </div>
         <div class="content">
-            <!--
-            <div class="quote" style="font-size: 1.5em">
-                <span class="bqstart">&#8220;</span>
-                Good Politics Starts with YOU and ME.<br/>
-                Join the Campaign for Change.
-                <span class="bqend">&#8221;</span>
+            <div class="banner">
+                <div class="banner-overlay">
+                    <p class="banner-quote">
+                        <span class="quote-open"></span>
+                        Good Politics Starts with YOU and ME.
+                        <br /> Join the campaign for change.
+                        <span class="quote-close"></span>
+                    </p>
+                </div>
             </div>
-            --> 
-
+        </div>
             <div>
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             </div>
