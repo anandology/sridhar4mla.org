@@ -1,0 +1,172 @@
+body {
+    background: #eee;
+}
+
+header {
+    background-color: #2B56A0;
+    background-image: linear-gradient(to bottom, #2F5DAB, #244B90);
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+
+    padding: 10px 0px;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1, header h2, header h3 {
+    text-decoration: none;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    font-style: normal;
+    text-shadow: none;
+}
+
+header h1 {
+    font-style: normal;
+    font-weight: bold;
+    margin: 0px;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.banner {
+    background: url("/static/images/sridhar.png") no-repeat right;
+    color: #FFFFFF;
+    background-color:#000;
+    height: 256px;
+    position: relative;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.banner-overlay {
+    float: left;
+    padding: 40px 40px 0;
+}
+
+.banner-quote {
+    font-family: "Scada",sans-serif;
+    font-size: 25px;
+    line-height: 35px;
+/*        text-transform: uppercase;
+*/    }
+
+.menu {
+    margin: 20px 0px 0px 0px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.menu-item{
+    background-color:#EEEEEE;
+    color: #2B56A0;
+    padding: 10px 26px 10px 26px;
+    border-top: 1px solid #2B56A0;
+    border-bottom: 1px solid #2B56A0;
+    text-align: center;
+}
+
+.menu-item a{
+    color: #2B56A0;
+}
+
+.party h3 {
+    border: none;
+    font-style: italic;
+    font-size: 1.1em;
+    margin: 0px;
+    margin-top: -10px;
+}
+
+.footer {
+    border-top: 1px solid #ddd;
+    padding: 20px;
+    background: white;
+    color: #444;
+    /*
+    border-top: 1px solid #E5E5E5;
+    background-color: whiteSmoke;
+    */
+}
+.footer a {
+    color: #365FA6;
+}
+
+.footer h1, .footer h2, .footer h3, .footer h4 {
+    text-shadow: none;
+}
+
+.footer p {
+    text-align: center;
+}
+
+.subscriptions ul {
+    padding-left: 20px;
+}
+
+.date {
+    color: #7e2724;
+    font-size: 22px;
+    font-weight: normal;
+    font-family: Tahoma;
+}
+.venue {
+    font-size: 24px;
+    font-weight: normal;
+    color: #464646;
+}
+
+.content {
+    margin: 0px;
+    margin-top: 20px;
+    padding: 20px;
+    line-height: 1.5em !important;
+    font-size: 1.2em;
+    background: #ddd;
+    color: #444;
+}
+
+.quote {
+    line-height: 1.5em;
+    border-bottom: 1px solid #ddd;
+    background : url("/static/images/sridhar.png") no-repeat right; 
+    background-color: black;
+    background-size: 10em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.for-container {
+    margin: 0px 0px;
+}
+
+.for-div {
+    font-size: 1.4em;
+    line-height: 1.2em;
+}
+span.for {
+    font-weight: normal;
+    color: black;
+}
+.candidate {
+    padding: 0px;
+    padding-right: 30px;
+    text-transform: uppercase;
+    font-family: Georgia;
+}
+.candidate h2 {
+    font-size: 1.5em;
+    border: none;
+    font-style: normal;
+    margin: 0px;
+    margin-top: -10px;
+    font-weight: normal;
+}
+.votefor {
+    float: left;
+}
+
+.line {
+    border-bottom: 1px solid #ddd;
+}

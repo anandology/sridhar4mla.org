@@ -1,200 +1,5 @@
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.css" type="text/css">
-
-    <link rel="shortcut icon" href="http://loksatta.org/assets/img/favicon.png">
-    <title>Sridhar for MLA - Hebbal Constituency - Loksatta Party</title>
-
-<style type="text/css">
-    body {
-        background: #eee;
-    }
-
-    header {
-        background-color: #2B56A0;
-        background-image: linear-gradient(to bottom, #2F5DAB, #244B90);
-        background-repeat: repeat-x;
-        color: #FFFFFF;
-
-        padding: 10px 0px;
-        border-bottom: 1px solid #ddd;
-    }
-
-    header h1, header h2, header h3 {
-        text-decoration: none;
-        border: none;
-        margin: 0px;
-        padding: 0px;
-        font-style: normal;
-        text-shadow: none;
-    }
-
-    header h1 {
-        font-style: normal;
-        font-weight: bold;
-        margin: 0px;
-    }
-    
-    header h1 a {
-        text-decoration: none;
-        color: white;
-    }
-
-    .banner {
-        background: url("assets/images/sridhar.png") no-repeat right;
-        color: #FFFFFF;
-        background-color:#000;
-        height: 256px;
-        position: relative;
-        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
-    }
-
-    .banner-overlay {
-        float: left;
-        padding: 40px 40px 0;
-    }
-
-    .banner-quote {
-        font-family: "Scada",sans-serif;
-        font-size: 25px;
-        line-height: 35px;
-/*        text-transform: uppercase;
-*/    }
-
-    .menu {
-        margin: 20px 0px 0px 0px;
-        font-weight: bold;
-        font-size: 1.5em;
-    }
-    .menu-item{
-        background-color:#EEEEEE;
-        color: #2B56A0;
-        padding: 10px 26px 10px 26px;
-        border-top: 1px solid #2B56A0;
-        border-bottom: 1px solid #2B56A0;
-        text-align: center;
-    }
-
-    .menu-item a{
-        color: #2B56A0;
-    }
-
-    .party h3 {
-        border: none;
-        font-style: italic;
-        font-size: 1.1em;
-        margin: 0px;
-        margin-top: -10px;
-    }
-
-    .footer {
-        border-top: 1px solid #ddd;
-        padding: 20px;
-        background: white;
-        color: #444;
-        /*
-        border-top: 1px solid #E5E5E5;
-        background-color: whiteSmoke;
-        */
-    }
-    .footer a {
-        color: #365FA6;
-    }
-
-    .footer h1, .footer h2, .footer h3, .footer h4 {
-        text-shadow: none;
-    }
-
-    .footer p {
-        text-align: center;
-    }
-
-    .subscriptions ul {
-        padding-left: 20px;
-    }
-
-    .date {
-        color: #7e2724;
-        font-size: 22px;
-        font-weight: normal;
-        font-family: Tahoma;
-    }
-    .venue {
-        font-size: 24px;
-        font-weight: normal;
-        color: #464646;
-    }
-
-    .content {
-        margin: 0px;
-        margin-top: 20px;
-        padding: 20px;
-        line-height: 1.5em !important;
-        font-size: 1.2em;
-        background: white;
-        color: #444;
-    }
-
-    .quote {
-        line-height: 1.5em;
-        border-bottom: 1px solid #ddd;
-        background : url("assets/images/sridhar.png") no-repeat right; 
-        background-color: black;
-        background-size: 10em;
-        color: white;
-        margin-bottom: 20px;
-    }
-
-    .for-container {
-        margin: 0px 0px;
-    }
-    
-    .for-div {
-        font-size: 1.4em;
-        line-height: 1.2em;
-    }
-    span.for {
-        font-weight: normal;
-        color: black;
-    }
-    .candidate {
-        padding: 0px;
-        padding-right: 30px;
-        text-transform: uppercase;
-        font-family: Georgia;
-    }
-    .candidate h2 {
-        font-size: 1.5em;
-        border: none;
-        font-style: normal;
-        margin: 0px;
-        margin-top: -10px;
-        font-weight: normal;
-    }
-    .votefor {
-        float: left;
-    }
-
-    .line {
-        border-bottom: 1px solid #ddd;
-    }
-</style>
-</head>
-
+$def with(form)
 <body>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
     <header class="header">
         <div class="container">
             <div class="row">
@@ -207,7 +12,7 @@
                 </div>
                 <div class="span5">
                     <h4>&nbsp;</h4>
-                    <img src="assets/images/whistle.png" style="float:right;height:100%;padding-left:20px;"/>
+                    <img src="/static/images/whistle.png" style="float:right;height:100%;padding-left:20px;"/>
                     <div style="float:right">
                         <h2>Lok Satta Party</h2>
                         <h5>New politics for new generation<h5>
@@ -260,7 +65,7 @@
             <div class="span4">
                 <h4> Stay Connected! </h4>
                 <form id="form-stay-connected" method="POST">
-                    <input type='text' placeholder="Name" name="lastname"></input>
+                    <input type='text' placeholder="Name" name="name"></input>
                     <br/>
                     <input type='text' placeholder="E-Mail" name="email"></input>
                     <br/>
@@ -271,7 +76,7 @@
                     </div>
                     <div><input type='checkbox' name="donate" id="donate"/>
                         <label for="donate" style="display:inline;">I'd like to donate</label>
-                        &nbsp;Rs.&nbsp;<input  style="display:inline;width:40px;" type='text' placeholder="100"/>
+                        &nbsp;Rs.&nbsp;<input  style="display:inline;width:40px;" name="donate_amt" type='text' placeholder="100"/>
                     </div><br/>
                     <input type="submit" value="Keep  me  updated"></input>
                 </form>
@@ -322,5 +127,3 @@
     </div>
 
     </div>
-</body>
-</html>
