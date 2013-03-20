@@ -174,3 +174,10 @@ span.for {
 .error{
     color: red;
 }
+
+.thanks{
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 10px 10px 10px;
+}

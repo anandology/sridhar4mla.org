@@ -1,4 +1,4 @@
-$def with(form)
+$def with(form, msg='')
 
 <body>
     <header class="header">
@@ -65,6 +65,7 @@ $def with(form)
         <div class="row">
             <div class="span4">
                 <h4> Stay Connected! </h4>
+                <span class="thanks">$:msg</span>
                 $if not form.valid:
                     $if form.note:
                         <p class="error">$:form.note</p>
