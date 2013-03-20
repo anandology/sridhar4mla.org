@@ -14,7 +14,11 @@ urls = (
 app = web.application(urls, globals())
 
 def save_user(i):
-    print i
+    phone = web.numify(i.phone)
+    pin = web.numify(i.pin)
+    volunteer = 'volunteer' in i
+    donate = int(i.donate_amt, 0)
+    db.insert('users', name=i.name, email=i.email, phone=phone, pin=pin, want2volunteer=volunteer, want2donate=donate)
 
 class index(object):
     def GET(self, form=None):
