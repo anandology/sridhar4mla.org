@@ -1,4 +1,5 @@
 $def with(form)
+
 <body>
     <header class="header">
         <div class="container">
@@ -64,19 +65,31 @@ $def with(form)
         <div class="row">
             <div class="span4">
                 <h4> Stay Connected! </h4>
+                $if not form.valid:
+                    $if form.note:
+                        <p class="error">$:form.note</p>
+                    $else:
+                        <p class="error">Please fix the errors highlighted below:</p>
+
                 <form id="form-stay-connected" method="POST">
-                    <input type='text' placeholder="Name" name="name"></input>
+                    <span class="error">$:form.name.note</span>
+                    <input type='text' placeholder="Name" name="name" value="$:form.name.value"></input>
                     <br/>
-                    <input type='text' placeholder="E-Mail" name="email"></input>
+                    <span class="error">$:form.email.note</span>
+                    <input type='text' placeholder="E-Mail" name="email" value="$:form.email.value"></input>
                     <br/>
-                    <input type='text' placeholder="Phone" name="phone" style="width:95px;"></input>
-                    <input type='text' placeholder="PIN Code" name="pin" style="width:95px;"></input>
+                    <span class="error">$:form.phone.note</span>
+                    <input type='text' placeholder="Phone" name="phone" style="width:95px;"  value="$:form.phone.value"></input>
+                    <span class="error">$:form.pin.note</span>
+                    <input type='text' placeholder="PIN Code" name="pin" style="width:95px;" value="$:form.pin.value"></input>
                     <div><input type='checkbox' name="volunteer" id="volunteer" />
                         <label for="volunteer" style="display:inline;">I'd like to volunteer!</label>
                     </div>
-                    <div><input type='checkbox' name="donate" id="donate"/>
+                    <div>
+                        <span class="error">$:form.donate.note</span>
+                        <input type='checkbox' name="donate" id="donate" />
                         <label for="donate" style="display:inline;">I'd like to donate</label>
-                        &nbsp;Rs.&nbsp;<input  style="display:inline;width:40px;" name="donate_amt" type='text' placeholder="100"/>
+                        &nbsp;Rs.&nbsp;<input  style="display:inline;width:40px;" name="donate_amt" type='text' placeholder="100" value="$:form.donate_amt.value"/>
                     </div><br/>
                     <input type="submit" value="Keep  me  updated"></input>
                 </form>

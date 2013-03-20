@@ -17,8 +17,8 @@ def save_user(i):
     print i
 
 class index(object):
-    def GET(self, sf=None):
-        form = forms.stay_connected_form()
+    def GET(self, form=None):
+        form = form or forms.stay_connected_form()
         return render.index(form)
     
     def POST(self):

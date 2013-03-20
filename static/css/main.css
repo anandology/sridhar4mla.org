@@ -170,3 +170,7 @@ span.for {
 .line {
     border-bottom: 1px solid #ddd;
 }
+
+.error{
+    color: red;
+}
