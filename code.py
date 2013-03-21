@@ -9,6 +9,7 @@ if not production_mode:
 
 urls = (
   r'/', 'index',
+  r'/(.*)', 'pages',
 )
 
 app = web.application(urls, globals())
@@ -32,11 +33,18 @@ def save_user(i):
     donate = 'donate' in i and int(i.donate_amt, 0)
     db.insert('users', name=i.name, email=i.email, phone=phone, pin=pin, want2volunteer=volunteer, want2donate=donate_amt)
 
+class pages(object):
+    def GET(self, page):
+        page = page.strip().replace('-', '_')
+        if render._lookup(page)[0]:
+            return render.base(render.__getattr__(page)())
+        raise web.notfound()
+
 class index(object):
     def GET(self, form=None):
         form = form or forms.stay_connected_form()
         msg = get_delete_msg()
-        return render.index(form, msg=msg)
+        return render.base(render.index(form, msg=msg))
     
     def POST(self):
         i = web.input()

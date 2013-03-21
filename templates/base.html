@@ -1,4 +1,4 @@
-$def with(page)
+$def with (page)
 <!DOCTYPE html>
 
 <html>
@@ -20,6 +20,51 @@ $def with(page)
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-$:page
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="span7">
+                    <h4>Vote for</h4>
+                    <h1 class="candidate">Sridhar Pabbisetty<h1>
+                    <h4>
+                        Hebbal Assembly Constituency
+                    </h4>
+                </div>
+                <div class="span5">
+                    <h4>&nbsp;</h4>
+                    <img src="/static/images/whistle.png" style="float:right;height:100%;padding-left:20px;"/>
+                    <div style="float:right">
+                        <h2>Lok Satta Party</h2>
+                        <h5>New politics for new generation<h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="menu">
+            <span class="menu-item">
+                <a href='/'>Home</a>
+            </span>
+            <span class="menu-item">
+                <a href="/why-sridhar">Why Sridhar?</a>
+            </span>
+            <span class="menu-item">
+                <a href="/why-loksatta">Why Loksatta?</a>
+            </span>
+            <span class="menu-item">
+                <a href="/issues">Issues</a>
+            </span>
+            <span class="menu-item">
+                <a href="/volunteer">Volunteer</a>
+            </span>
+            <span class="menu-item">
+                <a href="/contact">Contact</a>
+            </span>
+        </div>
+        <div class="content">
+            $:page
+        </div>
+    </div>  
 </body>
-</html>    
+</html>
