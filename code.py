@@ -23,7 +23,6 @@ def set_msg(msg):
     web.setcookie('sp_msg', msg)
 
 def save_user(i):
-    phone = web.numify(i.phone)
     pin = web.numify(i.pin)
     volunteer = 'volunteer' in i
     if 'donate' in i:
@@ -31,7 +30,7 @@ def save_user(i):
     else:
         donate_amt = 0
     donate = 'donate' in i and int(i.donate_amt, 0)
-    db.insert('users', name=i.name, email=i.email, phone=phone, pin=pin, want2volunteer=volunteer, want2donate=donate_amt)
+    db.insert('users', name=i.name, email=i.email, phone=i.phone, pin=pin, want2volunteer=volunteer, want2donate=donate_amt)
 
 class pages(object):
     def GET(self, page):
