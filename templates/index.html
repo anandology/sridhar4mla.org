@@ -25,12 +25,17 @@ $def with(form, msg='')
 -->
         </div>
 
-        <span class="span12 line">&nbsp;</span>
     <div class="container">
         <div class="row">
+            <div class="span8">
+                <h4>Sridhar's updates</h4>
+                <div class="fb-like-box" data-href="http://www.facebook.com/sridhar4mla" data-width="600" data-height="900" data-show-faces="false" data-stream="true" data-header="true"></div>
+            </div>
+
             <div class="span4">
-                <h4> Stay Connected! </h4>
-                <span class="thanks">$:msg</span>
+                <h4>Join the Campaign</h4>
+                $if msg:
+                    <span class="thanks">$:msg</span>
                 $if not form.valid:
                     $if form.note:
                         <p class="error">$:form.note</p>
@@ -51,25 +56,42 @@ $def with(form, msg='')
                     <div><input type='checkbox' name="volunteer" id="volunteer" />
                         <label for="volunteer" style="display:inline;">I'd like to volunteer!</label>
                     </div>
+                    <!--
                     <div>
                         <span class="error">$:form.donate.note</span>
                         <input type='checkbox' name="donate" id="donate" />
                         <label for="donate" style="display:inline;">I'd like to donate</label>
                         &nbsp;Rs.&nbsp;<input  style="display:inline;width:40px;" name="donate_amt" type='text' placeholder="100" value="$:form.donate_amt.value"/>
                     </div><br/>
-                    <input type="submit" value="Keep  me  updated"></input>
+                    -->
+                    <input type="submit" value="Join the Campaign"></input>
                 </form>
-                <br />
-                <h4>Lok Satta updates</h4>
-                <div class="fb-like-box" data-href="http://www.facebook.com/loksatta" data-width="280" data-height="600" data-show-faces="false" data-stream="true" data-header="true"></div>
-            </div>
-            
-            <div class="span8">
-                <h4>Sridhar's updates</h4>
-                <div class="fb-like-box" data-href="http://www.facebook.com/sridhar4mla" data-width="600" data-height="900" data-show-faces="false" data-stream="true" data-header="true"></div>
-                
-                <!-- <a class="twitter-timeline"  href="https://twitter.com/sridhar4mla"  data-widget-id="313948137788149760">Tweets by @sridhar4mla</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>            -->
+                <h4>Donate to the campaign</h4>
+                <div>
+                    Transfer Online:
+                    <p>
+                    A/C Name: Loksatta Party<br/>
+                    A/C #: 30855182631<br/>
+                    IFS code: SBIN0001731
+                    </p>
+
+                    <p>
+                    Please write <strong>Sridhar4MLA</strong> in the comments field.
+                    </p>
+
+                    <p>
+                    After the transfer send your name, contact details, PAN number and 
+                    transaction reference number to 
+                    <a href="mailto:info@loksattakarnataka.org">info@loksattakarnataka.org</a>.
+                    </p>
+
+                    <h4>Or Pay by Cheque</h4>
+                    Draw the cheque in favour of <strong>LOKSATTA PARTY</strong> and write <strong>Sridhar4MLA</strong> on the back of the cheque.<br/>
+                </div>
+                <div>
+                    <small>Under 80GGC you will get tax exemption on the donation amount.</small><br/>
+                    <small>NOTE: Loksatta accepts donations from INDIAN CITIZENS ONLY.</small><br/>
+                </div>
             </div>
         </div>
     </div>
