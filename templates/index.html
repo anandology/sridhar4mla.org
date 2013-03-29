@@ -35,15 +35,9 @@ $def with(form, msg='')
                     <div><input type='checkbox' name="volunteer" id="volunteer" />
                         <label for="volunteer" style="display:inline;">I'd like to volunteer!</label>
                     </div>
-                    <!--
-                    <div>
-                        <span class="error">$:form.donate.note</span>
-                        <input type='checkbox' name="donate" id="donate" />
-                        <label for="donate" style="display:inline;">I'd like to donate</label>
-                        &nbsp;Rs.&nbsp;<input  style="display:inline;width:40px;" name="donate_amt" type='text' placeholder="100" value="$:form.donate_amt.value"/>
-                    </div><br/>
-                    -->
-                    <input type="submit" value="Join the Campaign"></input>
+
+                   <input name="donate_amt" type="hidden" value="0"/>
+                   <input type="submit" value="Join the Campaign"></input>
                 </form>
                 <h4>Donate to the campaign</h4>
                 <div>
